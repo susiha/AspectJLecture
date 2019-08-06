@@ -5,6 +5,7 @@ package com.susiha.aspectjlecture.bean;
  */
 public class FirstBean {
     public int getmFlag() {
+        System.out.println("调用了这个getmFlag方法");
         return mFlag;
     }
 

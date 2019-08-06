@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SecondaryActivity"/>
+        <activity android:name=".fast.ThirdActivity"/>
     </application>
 
 </manifest>
