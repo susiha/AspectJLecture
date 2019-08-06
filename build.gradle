@@ -1,0 +1,35 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.0'
+        //添加编织器，gradle构建时会对class文件进行编织
+//        classpath 'org.aspectj:aspectjweaver:1.8.9'
+        //添加工具包,在构建的时候进行日志打印
+//        classpath 'org.aspectj:aspectjtools:1.8.9'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+
+
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+
+
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
